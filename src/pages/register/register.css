@@ -1,0 +1,77 @@
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-fire-flames-on-dark-background-image_308363.jpg');
+    background-size: cover;
+}
+.registerFormGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerTitle {
+    font-size: 20px;
+    color: #fbfbfb;
+}
+
+.registerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fbfbfb;
+}
+
+.registerFormGroup > label {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.registerInput {
+    padding: 10px;
+    font-size: 12px;
+    border-color: white;
+    border: none;
+}
+.registerInput:focus {
+    outline: none;
+}
+
+.registerButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.registerLogin {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.registerError {
+    color: lightcoral;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.registerFormGroup.invalid .registerInput {
+    border: 2px solid #f33a58;
+}
+
+.registerFormGroup.invalid .formMessage {
+    color: #f33a58;
+}

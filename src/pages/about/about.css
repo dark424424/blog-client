@@ -1,0 +1,133 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 80px;
+}
+
+.aboutImg {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    z-index: 1;
+}
+
+.aboutLeft {
+    margin: 0 25px 40px 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+}
+
+.aboutLeft::before {
+    content: '';
+    background-image: conic-gradient(#2bff00 20deg, transparent 120deg);
+    width: 200%;
+    height: 400%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+    z-index: 0;
+}
+
+.aboutLeft::after {
+    content: '';
+    width: calc(100% - 12px);
+    height: calc(100% - 10px);
+    background: rgb(31, 26, 26);
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+    z-index: 0;
+}
+
+.aboutDesc {
+    padding: 20px;
+    color: #fbfbfb;
+    display: inline-block;
+    margin-left: 50px;
+    text-align: start;
+    /* border: 1px solid lightcoral; */
+    border-radius: 10px;
+    flex: 6;
+}
+.aboutDescTitle {
+    color: #fbfbfb;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.aboutDescSecondTitle {
+    color: #fbfbfb;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.aboutDescSecondTitle span {
+    color: #f9004d;
+}
+
+.aboutDescText {
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.aboutDescBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbfbfb;
+    background-color: #f9004d;
+    padding: 8px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+.aboutDescBtn:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutDesc {
+        margin-right: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutDesc {
+        margin-right: 50px;
+    }
+}

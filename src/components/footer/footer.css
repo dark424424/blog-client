@@ -1,0 +1,77 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid lightcoral;
+    margin-top: 40px;
+}
+
+.footerTitle {
+    background-image: linear-gradient(to left, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-top: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.footerDesc {
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 24px;
+    color: #fbfbfb;
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.footerSocialItem {
+    display: flex;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 2px;
+    border: 1px solid #fbfbfb;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.footerSocialIcon {
+    font-size: 20px;
+    color: #fbfbfb;
+}
+
+.footerEnding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerEndingItem {
+    color: #fbfbfb;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.footerAuthor {
+    margin: 20px 20px 10px 20px;
+    font-size: 16px;
+    color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+}

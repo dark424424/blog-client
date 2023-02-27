@@ -1,0 +1,195 @@
+.singlePost {
+    flex: 9;
+}
+
+.singlePostWrapper {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostImg {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.singlePostTitle {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: lightcoral;
+}
+
+.singlePostTitleInput {
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: lightcoral;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.singlePostTitleInput:focus {
+    outline: none;
+}
+
+.singlePostEdit {
+    float: right;
+    font-size: 16px;
+}
+
+.singlePostIcon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+    color: teal;
+}
+
+.singlePostIcon:last-child {
+    color: tomato;
+}
+
+.singlePostInfo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #b39656;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.singlePostDescription {
+    color: #666;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    /* display: flex; */
+}
+
+.singlePostDescription::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.singlePostDescriptionInput {
+    color: #666;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    height: 50vh;
+    border: none;
+    background-color: transparent;
+}
+.singlePostDescriptionInput:focus {
+    outline: none;
+}
+
+.singlePostEnd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singlePostCategories {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.singlePostButton {
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: teal;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.singlePostCategoriesList {
+    margin-top: 20px;
+    display: flex;
+    font-size: 16px;
+    color: #b39656;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.categoriesItem {
+    margin-left: 6px;
+}
+
+.categoriesSelect {
+    display: flex;
+    justify-content: flex-start;
+    color: lightcoral;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #666;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.categoriesItemButton {
+    margin-left: 4px;
+    background-color: transparent;
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.singlePostComment {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostCommentLength {
+    display: flex;
+    color: #fbfbfb;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.singlePostCommentInput {
+    outline: transparent;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: lightcoral;
+    font-size: 16px;
+}
+
+.SinglePostCommentBtn {
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+}
+
+.singlePostCommentList {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .singlePostAuthor {
+}
+
+.singlePostDate {
+} */
+
+@media (max-width: 739px) {
+    .singlePostWrapper {
+        padding-right: 20px;
+    }
+}

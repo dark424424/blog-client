@@ -1,0 +1,9 @@
+.home {
+    display: flex;
+    position: relative;
+}
+
+.pageandnum {
+    position: relative;
+    flex: 9;
+}

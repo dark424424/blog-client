@@ -1,0 +1,177 @@
+.top {
+    /* width: 100%; */
+    height: 50px;
+    /* background-color: #fff; */
+    background-image: var(--background-color);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+    border: 1px solid #2d2929;
+}
+
+.topLeft,
+.topRight {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topCenter {
+    flex: 6;
+}
+
+.topRightSide {
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topIcon {
+    font-size: 20px;
+    margin: 10px;
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.topImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.topList {
+    display: flex;
+    justify-content: center;
+}
+
+.topListItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+}
+
+.topListItem > a {
+    color: #fbfbfb;
+}
+
+.topSearchIcon {
+    font-size: 18px;
+    color: #fbfbfb;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.topMobile {
+    display: none;
+    flex: 0.3;
+}
+
+.topMobileIcon {
+    color: #fff;
+    font-size: 24px;
+    padding: 4px;
+}
+
+.topMobileButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.topMobileList {
+    position: fixed;
+    top: calc(50px);
+    right: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 0 20px;
+    background-color: rgb(16, 16, 15);
+}
+
+@keyframes fall {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+/* .topMobileList :first-child {
+    margin: 10px;
+} */
+
+.topMobileListItem {
+    width: 100%;
+    margin-right: 20px;
+    /* margin: 10px 0 10px 20px; */
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    transition: width 2s;
+}
+
+.topMobileListItem > a {
+    color: #fbfbfb;
+}
+
+.navActive {
+    display: flex !important;
+    animation: fall 0.4s linear forwards;
+}
+
+.topMobileListImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hideOnTablet {
+        display: none;
+    }
+    .topMobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .topLeft {
+        justify-content: flex-start;
+    }
+
+    .topMobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .responsive_nav {
+        transform: none;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+}
