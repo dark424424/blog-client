@@ -1,16 +1,17 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
     server: {
         proxy: {
             '/api': {
-                // target: 'http://localhost:5000/',
-                target: 'https://blog-fire.herokuapp.com/',
+                target: process.env.BASE_URL || 'https://blog-fire.herokuapp.com/',
                 changeOrigin: true,
                 secure: false,
+                pathRewrite: {
+                    '^/api': '/api',
+                },
             },
         },
     },

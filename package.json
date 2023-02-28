@@ -6,10 +6,13 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "axios": "^0.21.1",
+        "gh-pages": "^5.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^5.2.0"
@@ -17,7 +20,9 @@
     "devDependencies": {
         "@types/react": "^18.0.27",
         "@types/react-dom": "^18.0.10",
+        "@vitejs/plugin-react": "^3.1.0",
         "@vitejs/plugin-react-swc": "^3.0.0",
         "vite": "^4.1.1"
-    }
+    },
+    "homepage": "http://dark424424.github.io/blog-client"
 }
